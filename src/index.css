@@ -18,27 +18,17 @@
 * {
   box-sizing: border-box;
 }
-html {
-  height: 100%;
-  width: 100%;
-}
-html,
-body,
-#root {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-}
 body {
   user-select: none;
   margin: 0;
   font-family: IRANSans;
   font-size: 16px;
   color: var(--color-grey-900);
-  background-color: var(--color-grey-100);
+  background-color: var(--color-grey-200);
+  padding-bottom: 32px;
 }
-input {
+input,
+select {
   font-family: IRANSans;
 }
 h1,
@@ -64,6 +54,7 @@ button {
   background-color: transparent;
   font: inherit;
   color: inherit;
+  cursor: pointer;
 }
 i.bi {
   display: flex;

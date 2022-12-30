@@ -4,8 +4,12 @@
   background-color: var(--color-pallete-1);
   color: var(--color-white);
   border-radius: 4px;
-  transition: .1s ease-out;
+  transition: 0.1s ease-out;
 }
-.button:hover {
-  transform: scale(.96);
+.button:disabled {
+  opacity: 0.64;
+  cursor: default;
+}
+.button:not(:disabled):hover {
+  transform: scale(0.96);
 }

@@ -1,0 +1,7 @@
+.row {
+  display: flex;
+  gap: 32px;
+}
+.row > * {
+  flex: 1;
+}

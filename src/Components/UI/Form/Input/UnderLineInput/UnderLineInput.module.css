@@ -1,0 +1,33 @@
+.underline-input {
+  position: relative;
+  z-index: 0;
+  display: flex;
+}
+
+.underline-input__input {
+  appearance: none;
+  outline: 0;
+  border: 0;
+  padding: 3px 4px;
+  border-bottom: 1px solid var(--color-grey-400);
+  flex: 1;
+  font-size: 16px;
+}
+.underline {
+  pointer-events: none;
+  position: absolute;
+  content: "";
+  inset: 0;
+  top: auto;
+  left: 100%;
+  height: 2px;
+  background-color: var(--color-pallete-1);
+  z-index: 2;
+  transition: 0.2s ease-in;
+  border-radius: 8px;
+}
+
+.underline-input__input:hover ~ .underline,
+.underline-input__input:focus ~ .underline {
+  left: 0;
+}

@@ -1,0 +1,43 @@
+.choose-btn {
+  background-color: var(--color-white);
+  background-image: linear-gradient(90deg, rgba(var(--color-pallete-1-rgb), 0), rgba(var(--color-pallete-2-rgb), 0));
+  color: var(--color-grey-900);
+  padding: 16px 32px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px -5px rgba(var(--color-dark-rgb), .2);
+  transition: all 0.2s ease-in;
+}
+.choose-btn__header {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.choose-btn__icon {
+  font-size: 40px;
+}
+.choose-btn__desc {
+  opacity: 0.76;
+  margin-bottom: 8px;
+}
+.choose-btn__btn {
+  background-image: linear-gradient(90deg, rgba(var(--color-pallete-1-rgb), 1), rgba(var(--color-pallete-2-rgb), 1));
+  background-color: var(--color-white);
+  color: var(--color-white);
+  align-self: flex-end;
+  transition: all .2 ease-in;
+  margin-top: auto;
+}
+
+.choose-btn:hover {
+  background-image: linear-gradient(90deg, rgba(var(--color-pallete-1-rgb), 1), rgba(var(--color-pallete-2-rgb), 1));
+  color: var(--color-white);
+  transform: translate(0, -12px);
+}
+.choose-btn:hover .choose-btn__btn {
+  background-image: linear-gradient(90deg, rgba(var(--color-pallete-1-rgb), 0), rgba(var(--color-pallete-2-rgb), 0));
+  background-color: var(--color-white);
+  color: var(--color-pallete-1);
+}

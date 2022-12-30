@@ -1,0 +1,34 @@
+.header {
+  background-color: var(--color-white);
+  box-shadow: 0 0 10px -5px rgba(var(--color-dark-rgb), 0.2);
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.profile-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-grey-600);
+  padding: 4px 16px;
+  background-color: rgba(var(--color-pallete-1-rgb), 0);
+  border-radius: 32px;
+  transition: 0.2s ease-in;
+}
+.profile-photo {
+  width: 32px;
+  height: 32px;
+}
+.profile-photo__chatecter {
+  font-size: 20px;
+}
+.space {
+  flex: 1;
+}
+
+.header-navigation {
+  text-decoration: none;
+  color: inherit;
+}

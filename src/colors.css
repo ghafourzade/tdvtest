@@ -1,11 +1,13 @@
 :root {
   --color-pallete-1: #7579e7;
-  --color-pallete-2: #9ab3f5;
+  --color-pallete-2: #4f7df6;
+  /* --color-pallete-2: #9ab3f5; */
   --color-pallete-3: #a3d8f4;
   --color-pallete-4: #b9fffc;
 
   --color-pallete-1-rgb: 117, 121, 231;
-  --color-pallete-2-rgb: 154, 179, 245;
+  --color-pallete-2-rgb: 79, 125, 246;
+  /* --color-pallete-2-rgb: 154, 179, 245; */
   --color-pallete-3-rgb: 163, 216, 244;
   --color-pallete-4-rgb: 185, 255, 252;
 
@@ -19,6 +21,9 @@
   --color-grey-700: #495057;
   --color-grey-800: #343a40;
   --color-grey-900: #212529;
+
+  --color-dark: #212529;
+  --color-dark-rgb: 33, 37, 41;
 
   --color-danger: #dd0426;
   --color-success: #09ae25;

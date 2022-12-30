@@ -1,5 +1,4 @@
 .input {
-  border: 0;
   outline: 0;
   appearance: none;
   padding: 4px 8px;
@@ -28,11 +27,11 @@
 
 /* VALIDATION /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /* /*/
 
-.input.invalid{
+.input.invalid {
   border: 1px solid var(--color-danger);
   box-shadow: 0 0 0 4px rgba(var(--color-danger-rgb), 0.2);
 }
-.input.valid{
+.input.valid {
   border: 1px solid var(--color-success);
   box-shadow: 0 0 0 4px rgba(var(--color-success-rgb), 0.2);
 }

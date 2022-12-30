@@ -1,0 +1,9 @@
+.exams-row{
+  gap: 32px;
+}
+@media only screen and (max-width: 992px) {
+  .exams-row{
+    flex-direction: column;
+    gap: 16px;
+  }
+}

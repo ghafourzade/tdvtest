@@ -3,39 +3,69 @@
   height: 540px;
   display: flex;
 }
+@media only screen and (max-width: 640px) {
+  .profile-card {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex: 1;
+    border-radius: 0;
+  }
+}
 .card__inner {
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.profile-photo {
-  position: relative;
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  overflow: hidden;
-  z-index: 0;
-  margin-bottom: 16px;
-}
-.profile-photo::after {
+
+.profile-photo__btn {
+  color: var(--color-white);
+  font-size: 60px;
   position: absolute;
-  content: "";
   inset: 0;
-  background: linear-gradient(-45deg, var(--color-pallete-1), var(--color-pallete-4));
-  z-index: -1;
+  margin: auto;
+  opacity: 0;
+  z-index: 4;
+  transition: 0.1s ease-out;
+  cursor: pointer;
+}
+.profile-photo__btn:hover {
+  transform: scale(1.08);
+}
+.profile-photo:hover > .profile-photo__btn {
   opacity: 1;
 }
-.profile-photo__empty {
+.profile-photo__area {
   position: absolute;
   inset: 0;
-  font-size: 110px;
+  background-color: var(--color-grey-900);
+  opacity: 0;
+  z-index: 3;
+  transition: 0.1s ease-out;
+}
+.profile-photo__input {
+  display: none;
+}
+.profile-photo:hover > .profile-photo__area {
+  opacity: 0.6;
+}
+
+.card-btn {
   display: flex;
   justify-content: center;
-  align-content: center;
   align-items: center;
-  font-weight: bold;
-  color: var(--color-white);
+  margin-top: 16px;
+  align-self: flex-end;
+}
+
+.form-control__area {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.form-label {
+  margin-right: 8px;
 }

@@ -1,0 +1,24 @@
+.spaced-table {
+  border-collapse: separate;
+  border-spacing: 0 12px;
+}
+
+:root {
+  --spaced-table-radius: 8px;
+}
+.spaced-table__cell {
+  background-color: var(--color-white);
+  text-align: center;
+  padding: 4px 8px;
+}
+.spaced-table tr .spaced-table__cell:first-child {
+  border-radius: 0 var(--spaced-table-radius) var(--spaced-table-radius) 0;
+}
+.spaced-table tr .spaced-table__cell:last-child {
+  border-radius: var(--spaced-table-radius) 0 0 var(--spaced-table-radius);
+}
+
+.spaced-table__header .spaced-table__cell {
+  background-color: var(--color-pallete-1);
+  color: var(--color-white);
+}
